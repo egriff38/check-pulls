@@ -1,6 +1,6 @@
-import { getZen } from "./modules/svc.github/connection"
+import { getRepoNames } from "./modules/svc.github"
 
 (async () => {
-  const zen = await getZen()
-  console.log(zen)
+  const ramdaRepos = await getRepoNames("Ramda")
+  console.log(`Here are the Repos of the Ramda org:\n${ramdaRepos.join("\n")}`)
 })()
