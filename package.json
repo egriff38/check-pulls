@@ -4,7 +4,8 @@
   "description": "Checks pull request count and statistics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/main.ts"
   },
   "author": "",
   "license": "ISC",
