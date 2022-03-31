@@ -7,7 +7,7 @@ if(!process.env.GITHUB_ACCESS_KEY) {
 const svc = axios.create({
   baseURL: "https://api.github.com",
   headers: {
-    "Authorization": process.env.GITHUB_ACCESS_KEY
+    "Authorization": `token ${process.env.GITHUB_ACCESS_KEY}`
   }
 })
 
